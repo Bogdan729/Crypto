@@ -2,8 +2,6 @@ package tasks.task4;
 
 import tasks.GeneralCrypto;
 
-import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HashFunction {
@@ -24,21 +22,10 @@ public class HashFunction {
 
         int n = p * q;
 
-        int[] arr = getNumbers(msg);
+        int[] arr = GeneralCrypto.getNumbers(msg);
 
         int result  = GeneralCrypto.hashEncoder(arr, n, h0);
 
         System.out.println("\n" + "Хеш-образ: " + result);
-    }
-
-    static int[] getNumbers(String msg) {
-        int[] numbers = new int[msg.length()];
-        char[] arr = msg.toCharArray();
-
-        for (int i = 0; i < arr.length; i++) {
-            numbers[i] = GeneralCrypto.ALPHABET.indexOf(arr[i]);
-        }
-
-        return numbers;
     }
 }

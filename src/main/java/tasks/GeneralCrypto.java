@@ -80,6 +80,18 @@ public class GeneralCrypto {
         return e;
     }
 
+    // возвращает массив чисел, соответствующий номерам букв в алфавите
+    public static int[] getNumbers(String msg) {
+        int[] numbers = new int[msg.length()];
+        char[] arr = msg.toCharArray();
+
+        for (int i = 0; i < arr.length; i++) {
+            numbers[i] = GeneralCrypto.ALPHABET.indexOf(arr[i]);
+        }
+
+        return numbers;
+    }
+
     public static int hashEncoder(int[] arr, int n, int h0) {
         BigInteger eBig = BigInteger.valueOf(2);
         BigInteger nBig = BigInteger.valueOf(n);

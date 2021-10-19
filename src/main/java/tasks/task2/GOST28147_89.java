@@ -35,7 +35,7 @@ public class GOST28147_89 {
         String msg = sc.nextLine().toUpperCase();
 
         System.out.println("Введите ключ (32 бит):");
-        String x0 = sc.nextLine().toUpperCase().substring(0,4);
+        String x0 = sc.nextLine().toUpperCase().substring(0, 4);
 
         msg = GeneralCrypto.stringToBinarySeq(msg);
         x0 = GeneralCrypto.stringToBinarySeq(x0);

@@ -1,5 +1,6 @@
 package tasks.task5;
 
+import jdk.swing.interop.SwingInterOpUtils;
 import tasks.GeneralCrypto;
 
 import java.math.BigInteger;
@@ -29,7 +30,11 @@ public class EDS {
 
         System.out.println("\n" + "Хеш-образ: " + hashFunc);
 
-        System.out.println("\n" + "Открытый ключ: (" + e + ", " + n + ")");
+        System.out.println("\n" + "phi: " + phi);
+        System.out.println("d: " + d);
+        System.out.println("e: " + e + "\n");
+
+        System.out.println("Открытый ключ: (" + e + ", " + n + ")");
         System.out.println("Закрытый ключ: (" + d + ", " + n + ")" + "\n");
 
         int result = eds(hashFunc, d, n);

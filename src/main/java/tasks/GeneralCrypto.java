@@ -5,7 +5,7 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class GeneralCrypto {
-    public final static String ALPHABET = " АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+    public final static String ALPHABET = " АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
 
     public static String xorOperation(String a, String b, int n) {
         StringBuilder sb = new StringBuilder();

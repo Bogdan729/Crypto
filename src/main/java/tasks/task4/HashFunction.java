@@ -2,6 +2,8 @@ package tasks.task4;
 
 import tasks.GeneralCrypto;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HashFunction {
